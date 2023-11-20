@@ -66,9 +66,7 @@ CREATE TABLE `food` (
 -- Dumping data for table `food`
 --
 
-INSERT INTO `food` (`food_id`, `food_name`, `img`, `price`, `discount`, `new_price`, `food_type`, `res_id`) VALUES
-(2, 'ขนม', '1267921637.jpg', 100, 20, 80, 'a', 2),
-(4, 'คะซองค์', '1048582144.jpg', 80, 0, 0, '-', 2);
+
 
 -- --------------------------------------------------------
 
@@ -99,9 +97,7 @@ CREATE TABLE `food_order` (
 -- Dumping data for table `food_order`
 --
 
-INSERT INTO `food_order` (`order_id`, `res_id`, `food_name`, `food_img`, `price`, `quality`, `sumprice`, `firstname`, `lastname`, `address`, `phone`, `user_id`, `rider_id`, `date`, `time`, `status`) VALUES
-(3, 2, 'ขนม', '1267921637.jpg', 100, 2, 200, 'teerapat', 'suksam-ang', '159/48 ayutthaya bang pa-in', '0638508500', 1, 0, '2023-11-17', '13:52:44', 2),
-(4, 2, 'ขนม', '1267921637.jpg', 100, 1, 100, 'aa', 'a', 'a', 'a', 1, 0, '2023-11-17', '14:48:28', 2);
+
 
 -- --------------------------------------------------------
 
@@ -120,8 +116,7 @@ CREATE TABLE `food_type` (
 -- Dumping data for table `food_type`
 --
 
-INSERT INTO `food_type` (`food_type_id`, `food_type`, `img`, `res_id`) VALUES
-(1, 'a', '1964071601.jpg', 2);
+
 
 -- --------------------------------------------------------
 
@@ -147,9 +142,7 @@ CREATE TABLE `restaurant` (
 -- Dumping data for table `restaurant`
 --
 
-INSERT INTO `restaurant` (`res_id`, `res_name`, `firstname`, `lastname`, `img`, `username`, `password`, `address`, `phone`, `res_type`, `status`) VALUES
-(2, 'อะไรไม่รู้', 'a', 'a', '553841216.jpg', 'a', 'a', 'a', 'a123456789', 'a', 1),
-(4, 'b', 'b', 'b', '2098722703.jpg', 'b', 'b', 'b', 'b', 'a', 1);
+
 
 -- --------------------------------------------------------
 
@@ -167,9 +160,7 @@ CREATE TABLE `restaurant_type` (
 -- Dumping data for table `restaurant_type`
 --
 
-INSERT INTO `restaurant_type` (`res_type_id`, `res_type`, `img`) VALUES
-(1, 'a', '1907649807.jpg'),
-(2, 'b', '2017567390.jpg');
+
 
 -- --------------------------------------------------------
 
@@ -188,10 +179,7 @@ CREATE TABLE `review` (
 -- Dumping data for table `review`
 --
 
-INSERT INTO `review` (`review_id`, `text`, `food_id`, `user_id`) VALUES
-(3, 'ฟหกฟหก', 2, 1),
-(4, 'dfgdfg', 2, 1),
-(5, 'xfvfvdfg', 4, 1);
+
 
 -- --------------------------------------------------------
 
@@ -215,8 +203,7 @@ CREATE TABLE `rider` (
 -- Dumping data for table `rider`
 --
 
-INSERT INTO `rider` (`rider_id`, `firstname`, `lastname`, `img`, `username`, `password`, `address`, `phone`, `status`) VALUES
-(1, 'a', 'a', '1266299319.jpg', 'a', 'a', 'a', 'a', 1);
+
 
 -- --------------------------------------------------------
 
@@ -240,8 +227,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `img`, `username`, `password`, `address`, `phone`, `status`) VALUES
-(1, 'aa', 'a', '261394434.jpg', 'a', 'a', 'a', 'a', 1);
+
 
 --
 -- Indexes for dumped tables
